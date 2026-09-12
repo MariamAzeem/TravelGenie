@@ -10,8 +10,6 @@ def get_weather(destination, duration):
     Creates weather context for the itinerary agent. The current uploaded
     agents do not include a live weather provider/API integration.
     """
-    api_key = validate_api_key()
-    client = Groq(api_key=api_key)
 
     prompt = f"""
 You are a travel weather planning assistant.
